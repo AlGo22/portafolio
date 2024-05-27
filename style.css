@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    background-color:rgb(255, 145, 191);
+}
+
+
+ol,
+ul { 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgba(85, 8, 56, 0.85);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-family: "Lobster", sans-serif;
+}
+
+header a i{
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5em;
+    color: white;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+footer{
+    background-color: #473247;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+}
+
+footer a{
+    color: white;
+}
+
+.seccion-1{
+    background-color:rgba(85, 8, 56, 0.85);
+    color:azure;
+    font-size: 20px;
+}
+
+.seccion-2 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.seccion-1{
+    background-color:#B27FB2;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion-1 img{
+    border-radius: 50% 20% / 10% 40%;
+}
+ 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px;
+}
+    
+.card {
+    margin: 10px;
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: dashed;
+    border-width: 2px 4px;
+    border-radius: 40px;
+    border-color: #473247;
+}
+
+.card img{
+    border-radius: 10% / 50%;
+    border: 2px solid var(--color2);
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.card p{
+    width: 150px;
+}
+
+a i.fa-solid.fa-hand-sparkles{
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 4em;
+}
+
+/* Menú */
+#check {
+    display: none;
+
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    .header {
+        background-color: darkgoldenrod;     
+    }
+    .acerca-de {
+        text-align: center;
+
+      }
+
+    .acerca-imagen {
+        margin-bottom: 40px;
+
+      }
+
+      .checkbtn {
+        display: block;
+    
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition:  all 0.5s;
+
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: #2c3e50;
+    }
+
+}
+
+
